@@ -1,0 +1,14 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Shop</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <button *ngFor="let product of products" ion-button (click)="onBuyout(product)">
+    {{ product }}
+  </button>
+</ion-content>
